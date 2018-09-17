@@ -1,7 +1,7 @@
 from math import ceil
 from os import urandom
 
-from padding.base import BaseEncoder
+from pypadding.base import BaseEncoder
 
 
 class Encoder(BaseEncoder):    

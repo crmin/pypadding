@@ -1,6 +1,6 @@
 from math import ceil
 
-from padding.base import BaseEncoder
+from pypadding.base import BaseEncoder
 
 
 class Encoder(BaseEncoder):
