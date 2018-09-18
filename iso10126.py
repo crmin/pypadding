@@ -5,7 +5,7 @@ from pypadding.base import BaseEncoder
 
 
 class Encoder(BaseEncoder):    
-    def encode(self, src: bytes) -> bytes:
+    def encode(self, src):
         src_len = len(src)
         block_number = ceil((src_len+1)/self.block_size)
         pad_size = block_number * self.block_size - src_len

@@ -1,4 +1,1 @@
-from . import iso7816_4
-from . import x923
-from . import iso10126
-from . import pkcs
+from pypadding import iso7816_4, x923, iso10126, pkcs
