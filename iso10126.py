@@ -14,26 +14,3 @@ class Encoder(BaseEncoder):
     def decode(self, encoded_bytes):
         pad_size = encoded_bytes[-1]
         return encoded_bytes[:-pad_size]
-
-
-if __name__ == '__main__':
-    encoder = Encoder()
-
-    test_samples = ['hello', 'computer', 'blackjack', 'crystallization', 'hydroelectricity']
-    encoded_samples = []
-
-    for sample in test_samples:
-        test_bytes = sample.encode()
-        print('src:', test_bytes, 'len:', len(test_bytes))
-        encoded_bytes = encoder.encode(test_bytes)
-        print('encoded:', encoded_bytes, 'len:', len(encoded_bytes))
-        encoded_samples.append(encoded_bytes)
-        print('##########')
-
-    print('/////////////////////////////////////////')
-
-    for sample in encoded_samples:
-        print('encoded:', sample, 'len:', len(sample))
-        src_bytes = encoder.decode(sample)
-        print('src:', src_bytes, 'len:', len(src_bytes))
-        print('##########')
