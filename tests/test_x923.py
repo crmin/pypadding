@@ -1,4 +1,10 @@
+import os
+import sys
 import unittest
+
+FILE_DIR = os.path.dirname(__file__)
+ENV_PATH = os.path.join(FILE_DIR, '..', '..')
+sys.path.append(ENV_PATH)
 
 from pypadding import x923
 
