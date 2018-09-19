@@ -1,5 +1,7 @@
 # PyPadding
 
+[![Build Status](https://travis-ci.org/blinglnav/pypadding.svg?branch=master)](https://travis-ci.org/blinglnav/pypadding)
+
 This package implements padding methods to use block crypto function.
 
 ## Dependencies
