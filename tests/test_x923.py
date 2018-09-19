@@ -62,4 +62,3 @@ class X923Tests(unittest.TestCase):
         src = b'hydroelectricity\x00\x00\x00\x00\x00\x00\x00\x08'
         right_ans = b'hydroelectricity'
         self.assertEqual(self.encoder.decode(src), right_ans)
-

@@ -62,4 +62,3 @@ class ISO7816_4Tests(unittest.TestCase):
         src = b'hydroelectricity\x80\x00\x00\x00\x00\x00\x00\x00'
         right_ans = b'hydroelectricity'
         self.assertEqual(self.encoder.decode(src), right_ans)
-

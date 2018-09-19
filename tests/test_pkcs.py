@@ -62,4 +62,3 @@ class PKCSTests(unittest.TestCase):
         src = b'hydroelectricity\x08\x08\x08\x08\x08\x08\x08\x08'
         right_ans = b'hydroelectricity'
         self.assertEqual(self.encoder.decode(src), right_ans)
-

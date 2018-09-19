@@ -67,4 +67,3 @@ class ISO10126Tests(unittest.TestCase):
         src = b'hydroelectricity' + urandom(7) + b'\x08'
         right_ans = b'hydroelectricity'
         self.assertEqual(self.encoder.decode(src), right_ans)
-
