@@ -1,14 +1,19 @@
 language: python
 python:
-  - "3.2"
-  - "3.3"
-  - "3.4"
-  - "3.5"
-  - "3.6"
-matrix:
+- '3.2'
+- '3.3'
+- '3.4'
+- '3.5'
+- '3.6'
+matrix: 
 include:
-  - python: 3.7
-    dist: xenial
-    sudo: true
+- python: 3.7
+  dist: xenial
+  sudo: true
 script:
-  - python tests.py
+- python tests.py
+deploy:
+  provider: pypi
+  user: blinglnav
+  password:
+    secure: eS94d9HKS+52S3vmcUzSIOkzncZ1kKyxGKWYPIZUbwSorbOOenS/AGWCTmFdfgf9WrXHrR5/v3PmEGSnbJGc4nODAwXNMHmiVx9a/UywYOBoL4NFVBnkii8/QjANr2Rhb5gcdnJtaCKnpc3EAP5Qqqgt5QqoVrOs6BD2GMV5MIbfa4tMKkYwDdkl1i148+LyNys1GhsHDEiFAGw2EOMP2nTdLpHyRbLXQoWEyAobpogP6r92yYIuqrC7uxEoGxHzQ/d6exHKFoLpqIKvcOZR7/UDxEbgLDHKt8Xs0/lNocrHtGrc5tSNKRaKem2nVJY4vZvWbt1J/j7idBOIHwlEPqEj8ka8bbDYTnwhd725q0dYC6wbXjAwV3o6ioNtMmXnISVc5CcGmEJ7k4+1US/Gy0XqygqKVmXXUDgS/u/uKNMiLEclHUsNqPwhDLXPtFloWDWTbu5U3XfoCNl2B9qzdnP4zczvXLbeLuLZchWHBiLOMaHXsM5ZaubK1FvFypj26/1QQPZMjaq+0gyzRmYnK6FD4nehZaap0EREhQr/4c4KmwoRUs+YgGh5oEQYJMZPoRzSSXEf4xXZ34udGtHNMM4l9JuUFgKcy0CF5wuNLYp/qbEB27kZFskG3JQrWcPNzLDNauwYXxcE0zjlxBK06Z4gy8Twtvg0p4bgUMkpvjc=
