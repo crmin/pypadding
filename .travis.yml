@@ -11,4 +11,4 @@ include:
     dist: xenial
     sudo: true
 script:
-  - python pypadding/tests.py
+  - python tests.py
