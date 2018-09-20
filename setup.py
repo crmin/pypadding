@@ -1,9 +1,11 @@
 from setuptools import setup, find_packages
 
+import pypadding
+
 
 setup(
     name             = 'PyPadding',
-    version          = '1.0',
+    version          = pypadding.__version__,
     description      = 'Padding package when using block cryptography',
     long_description = open('README.md').read(),
     author           = 'Min Choro',
